@@ -56,6 +56,7 @@ function setContrat(res){
     $("#nomComplet").html(res["architecte"]["nomComplet"]);
     $("#createDateTime").html(res["createDateTime"]);
     $("#commune").html(res["donneesProjets"]["commune"]["valeur"]);
+    console.log(res["isSigned"]);
     if(res["isSigned"]==true){
         $("#isSigned").show();
         $("#isSignedn").hide();

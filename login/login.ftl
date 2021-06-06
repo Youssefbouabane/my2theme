@@ -128,8 +128,8 @@
                                         <label>
                                             Statut
                                         </label>
-                                        <div *ngIf="!contrat.isSigned" id="isSigned" class="stat">Non-visé</div>
-                                        <div *ngIf="contrat.isSigned" id="isSignedn" style="color: green !important;" class="stat">visé</div>
+                                        <div  id="isSignedn" class="stat">Non-visé</div>
+                                        <div  id="isSigned" style="color: green !important;" class="stat">visé</div>
                                     </div>
                                     
                                 </div>
