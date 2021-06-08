@@ -76,7 +76,6 @@
                 <div class="register-show">
                     <h2>Vérification Contrat</h2>
                     <div  *ngIf="show=='dactif'" id="show-dactif" class="form-container">
-                       <form #f="ngForm">
                         <div class="group inputHL">      
                             <input class="inputHL" name="timbre" ngModel type="text" required>
                             <span class="highlight"></span>
@@ -85,7 +84,6 @@
                             <i class="fa fa-stamp iconHL"></i>
                           </div>
                           <input type="button" onclick="checkContrat()" class="btn-org" value="Vérifier">
-                       </form>    
                     </div>
                     <div *ngIf="show=='load'" id="show-load" class="gl-load-gif">
                         <img  style="height: 142px;" src="${url.resourcesPath}/img/load.gif"/>
@@ -141,7 +139,7 @@
                     </div>
                     <div *ngIf="show=='notfound'" id="show-notfound" class="gl-load-gif" style="font-size: 14px;">
                         <p>Ce timbre n’existe pas. Veuillez renseigner le timbre du document tel qu’il figure sur le contrat.</p>
-                        <input type="button" (click)="ignore()" class="btn-org" value="Réessayer">
+                        <input type="button" onclick="ignore()" class="btn-org" value="Réessayer">
                     </div>
         
                 </div>
