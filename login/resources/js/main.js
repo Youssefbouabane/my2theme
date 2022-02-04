@@ -81,3 +81,17 @@ function ignore() {
     $('#show-actif').hide();
     $('#show-load').hide();
 }
+
+function goToStep2(){
+    $("#dp").hide();
+    $("#da").show();
+    $("#btnda").removeClass("inactive").addClass("active");
+    $("#btndp").removeClass("active").addClass("inactive");
+}
+
+function backToStep1(){
+    $("#da").hide();
+    $("#dp").show();  
+    $("#btndp").removeClass("inactive").addClass("active");
+    $("#btnda").removeClass("active").addClass("inactive");
+}

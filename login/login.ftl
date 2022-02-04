@@ -72,6 +72,7 @@
                     </div>
                     <!-- <input type="button" class="btn-org" value="Se connecter" (click)="connect(f)" onclickcc="location.href='home'"> -->
                     <a href="${url.loginResetCredentialsUrl}" style="color: #999;margin-top: 20px;">Mot de passe oublié ?</a>
+                    <a href="${url.registrationUrl}" style="color: orange;margin-top: 20px;">S'inscrire</a>
                 </div>
                 <div class="register-show">
                     <h2>Vérification Contrat</h2>
